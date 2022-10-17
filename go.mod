@@ -1,4 +1,4 @@
-module github.com/PrimerAI/inflector
+module github.com/johnjansen/inflector
 
 go 1.18
 

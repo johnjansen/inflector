@@ -3,7 +3,7 @@ package inflector_test
 import (
 	"fmt"
 
-	"github.com/PrimerAI/inflector"
+	"github.com/johnjansen/inflector"
 )
 
 func ExamplePluralize() {

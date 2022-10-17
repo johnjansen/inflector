@@ -3,7 +3,7 @@ package inflector_test
 import (
 	"testing"
 
-	"github.com/PrimerAI/inflector"
+	"github.com/johnjansen/inflector"
 	"github.com/stretchr/testify/assert"
 )
 
