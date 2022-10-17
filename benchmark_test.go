@@ -3,7 +3,7 @@ package inflector_test
 import (
 	"testing"
 
-	"github.com/tangzero/inflector"
+	"github.com/PrimerAI/inflector"
 )
 
 func BenchmarkPluralize(b *testing.B) {

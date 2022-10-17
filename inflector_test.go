@@ -3,8 +3,8 @@ package inflector_test
 import (
 	"testing"
 
+	"github.com/PrimerAI/inflector"
 	"github.com/stretchr/testify/assert"
-	"github.com/tangzero/inflector"
 )
 
 var SingularToPlural = map[string]string{

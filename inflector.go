@@ -143,6 +143,17 @@ func Singularize(plural string) string {
 	return singulars.convert(plural)
 }
 
+// Titleize converts strings to spaced UpperCamelCase.
+func Titleize(term string) string {
+	return camelizeRegex.ReplaceAllStringFunc(term, func(match string) string {
+		match = strings.Replace(strings.Replace(match, "-", " ", 1), "_", " ", 1)
+		if acronym, ok := acronyms[match]; ok {
+			return acronym
+		}
+		return strings.Title(match)
+	})
+}
+
 // Camelize converts strings to UpperCamelCase.
 func Camelize(term string) string {
 	return camelizeRegex.ReplaceAllStringFunc(term, func(match string) string {

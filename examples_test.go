@@ -3,7 +3,7 @@ package inflector_test
 import (
 	"fmt"
 
-	"github.com/tangzero/inflector"
+	"github.com/PrimerAI/inflector"
 )
 
 func ExamplePluralize() {
@@ -48,6 +48,20 @@ func ExampleCamelize() {
 	// HTTPConnectionTimeout
 	// RESTfulController
 	// MultipleHTTPCalls
+}
+
+func ExampleTitleize() {
+	fmt.Println(inflector.Titleize("my_account"))
+	fmt.Println(inflector.Titleize("user-profile"))
+	fmt.Println(inflector.Titleize("ssl_error"))
+	fmt.Println(inflector.Titleize("http_connection_timeout"))
+	fmt.Println(inflector.Titleize("restful_controller"))
+	// Output:
+	// My Account
+	// User Profile
+	// SSL Error
+	// HTTP Connection Timeout
+	// RESTful Controller
 }
 
 func ExampleUnderscorize() {
